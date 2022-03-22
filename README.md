@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# 自己制作的WebApp项目
+接口目前还在维持，预计在2022年10月份关闭接口。
+## 技术栈
+antd-mobile
+axios
+react-redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
