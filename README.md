@@ -1,6 +1,8 @@
 # 自己制作的WebApp项目
 接口目前还在维持，预计在2022年10月份关闭接口。
 ## 技术栈
+react
+react-router
 antd-mobile
 axios
 react-redux
