@@ -7,7 +7,7 @@ antd-mobile
 axios
 react-redux
 ##项目截图
-![](https://github.com/leemathew1998/React-webApp/blob/master/src/assets/2022-03-24 151325.gif)
+![](https://github.com/leemathew1998/React-webApp/blob/master/src/assets/2022-03-24.gif)
 
 ### `npm start`
 
