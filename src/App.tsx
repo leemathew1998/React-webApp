@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import RouterIndex from "./routers/index";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+
 import { Theme, themeReducer, initState } from "./pages/Context";
 function App() {
   const [state, dispatch]: any = useReducer(themeReducer, {
