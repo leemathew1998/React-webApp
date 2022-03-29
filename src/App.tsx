@@ -6,8 +6,10 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Theme, themeReducer, initState } from "./pages/Context";
 function App() {
-  const [state, dispatch]: any = useReducer(themeReducer, initState);
-
+  const [state, dispatch]: any = useReducer(themeReducer, {
+    theme: "sun",
+  });
+  // console.log(state, dispatch);
   return (
     <Provider store={store}>
       <Theme.Provider value={{ state, dispatch }}>

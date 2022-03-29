@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 
-export const Theme: any = React.createContext("");
+export const Theme: any = React.createContext({ state: { theme: "sun" } });
 export const darkTheme = {
   color: "#fff",
   backgroundColor: "#000",
@@ -16,14 +16,11 @@ const initState = {
 };
 // 定义state[业务]处理逻辑 reducer函数
 function themeReducer(state: any, action: any) {
-  // console.log(action);
   switch (action.type) {
     case "dark":
-      state.theme = "dark";
-      return state;
+      return { theme: action.type };
     case "sun":
-      state.theme = "sun";
-      return state;
+      return { theme: action.type };
     default:
       return state;
   }

@@ -1,9 +1,15 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, {
+  useState,
+  useContext,
+  useEffect,
+  useMemo,
+  useCallback,
+} from "react";
 import { List, Switch } from "antd-mobile";
 import { Theme } from "../../Context";
+import Example from "./text";
 const Setting = () => {
   const { state, dispatch }: any = useContext(Theme);
-
   const changetheme = (e: any) => {
     // console.log(state);
     if (e) {
@@ -29,13 +35,7 @@ const Setting = () => {
         >
           暗黑模式
         </List.Item>
-        <List.Item extra="未开启" clickable>
-          大字号模式
-        </List.Item>
-        <List.Item description="管理已授权的产品和设备" clickable>
-          授权管理
-        </List.Item>
-        <List.Item title="这里是标题">这里是主信息</List.Item>
+        {/* <Example /> */}
       </List>
     </div>
   );
