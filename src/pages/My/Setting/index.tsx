@@ -7,7 +7,7 @@ import React, {
 } from "react";
 import { List, Switch } from "antd-mobile";
 import { Theme } from "../../Context";
-import Example from "./text";
+import VirtualList from "./text";
 const Setting = () => {
   const { state, dispatch }: any = useContext(Theme);
   const changetheme = (e: any) => {
@@ -22,6 +22,7 @@ const Setting = () => {
       });
     }
   };
+
   return (
     <div>
       <List header="基础设置">
@@ -35,8 +36,8 @@ const Setting = () => {
         >
           暗黑模式
         </List.Item>
-        {/* <Example /> */}
       </List>
+      <VirtualList />
     </div>
   );
 };
